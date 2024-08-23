@@ -1,0 +1,263 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font: 400 20px/1.5em "Inter", Arial, sans-serif;
+}
+.logo span,
+.pizza,
+h4,
+footer section+section span,
+footer section+section span+span,
+.contact {
+     font: 800 18px/21px "Raleway", Arial, sans-serif;
+     text-transform: uppercase;
+}
+header .logo span {
+     position: absolute;
+     right: 10%;
+     top: 35%;
+     color: #70E000;
+}
+.logo span+span {
+     color: white;
+     right: 5.8%;
+}
+.pizza {
+     margin-top: 8%;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 24px;
+}
+.pizza h3 {
+     font-weight: 800;
+}
+.pizza h3,
+.pizza span+span {
+     font-size: 32px;
+}
+.pizza h2 {
+     font-size: 64px;
+     text-align: center;
+}
+.pizza h3 {
+     padding: 5% 0;
+}
+.ingredients:before,
+.pizza p+span {
+     color: #6C757D;
+}
+.ingredients:before {
+     content: "Ingredients: "
+}
+.pizza p {
+     width: 90%;
+     margin-bottom: 12px;
+}
+.pizza p,
+.pizza span+span {
+     color: rgb(49, 49, 49);
+}
+footer .logo span {
+     color: #414833;
+     position: absolute;
+     left: 7.5%;
+     top: 18%;
+}
+footer .logo span+span {
+     color: #0A0908;
+     left: 10.9%;
+}
+h4 {
+     font-size: 44px;
+     padding-top: 4%;
+     padding-left: 3%;
+     color: #656D4A;
+}
+.contact {
+     width: 100%;
+     font-size: 20px;
+     padding-top: 2%;
+     padding-left: 7%;
+}
+.contact p,
+.contact span {
+     display: block;
+     margin-top: .5em;
+}
+.address:before,
+.phone:before,
+.email:before {
+     color: #333533;
+}
+.address:before {
+     content: "Address: "
+}
+.phone:before {
+     content: "Phone: "
+}
+.email:before {
+     content: "Email: "
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     height: 72px;
+     position: relative;
+}
+header,
+.about {
+     background: #656D4A;
+}
+nav li {
+     display: inline-block;
+     margin-top: 22px;
+     margin-left: 14px;
+}
+nav li:first-child {
+     margin-left: 96px;
+}
+nav li a {
+     text-transform: uppercase;
+     text-decoration: none;
+     color: white;
+}
+nav img {
+     display: inline;
+     position: absolute;
+     right: 15%;
+     top: 18%;
+}
+.primary-nav div {
+     width: 50%;
+     float: left;
+}
+main {
+     width: 1360px;
+     margin: 0 auto;
+}
+main section {
+     width: 50%;
+     margin-top: 5%;
+     float: left;
+}
+main section img {
+     width: 680px;
+     margin-bottom: 15%;
+}
+main h1 {
+     font-size: 64px;
+     line-height: 77.45px;
+     width: 80%;
+}
+main p {
+     font-size: 32px;
+     line-height: 38.73px;
+     width: 75%;
+     margin-top: 5%;
+}
+main button {
+     color: white;
+     background: #F07167;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 4px 4px 0 #00000026;
+     width: 240px;
+     height: 64px;
+     margin-top: 5%;
+     font: 24px/24px "Roboto", Arial, sans-serif;
+}
+.about {
+     height: 314px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 64px;
+}
+.about section {
+     width: 294px;
+     height: 274px;
+     background: #B6AD90;
+}
+.about section img {
+     padding-left: 40%;
+     padding-top: 5%;
+}
+.about h3,
+.about p {
+     font: 400 16px/24px "Roboto", Arial, sans-serif;
+     padding-left: 7%;
+     padding-top: 5%;
+     width: 95%;
+}
+.about h3 {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+}
+.pizza section {
+     margin-top: 5%;
+     padding-left: 3%;
+     width: 33.333%;
+     float: left;
+}
+.pizza section+section+section+section {
+     margin-top: 4%;
+     margin-bottom: 5%;
+}
+.pizza section img {
+     width: 412px;
+}
+footer {
+     height: 251px;
+     background: #EDE0D4;
+     position: relative;
+}
+footer section {
+     width: 40%;
+     float: left;
+}
+footer section+section {
+     width: 60%;
+}
+footer section+section span {
+     position: absolute;
+     right: 18%;
+     bottom: 15%;
+     font-size: 22px;
+}
+footer section+section span+span {
+     right: 5%;
+     bottom: 15.4%;
+     font-size: 28px
+}
+footer .logo img {
+     padding-left: 7.5%;
+     padding-top: 5%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
